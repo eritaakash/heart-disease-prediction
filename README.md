@@ -11,7 +11,9 @@ Cardiovascular diseases are a leading cause of death worldwide. This project aim
 
 - `Exploration.ipynb`: A Notebook dedicated to data exploration and preprocessing.
 
-- `Project.ipynb`: The Notebook where the Logistic Regression is trained over the clean data.
+- `LogisticRegression.ipynb`: The Notebook where the Logistic Regression is trained over the clean data.
+
+- `XGBoost.ipynb`: The Notebook containing Extreme Gradient Boost model trained over the clean data
 
 - `requirements.txt`: A file listing the Python dependencies needed to run the notebooks.
 
@@ -29,6 +31,7 @@ Cardiovascular diseases are a leading cause of death worldwide. This project aim
 
 ### Model Performance 
 
+1. For **Logistic Regression**:
 ```
               precision    recall  f1-score   support
 
@@ -41,9 +44,21 @@ weighted avg       0.86      0.86      0.86        91
 ```
 
 
+2. For **XGB Classifier**:
+```
+              precision    recall  f1-score   support
+
+           0       0.88      0.85      0.86        41
+           1       0.88      0.90      0.89        50
+
+    accuracy                           0.88        91
+   macro avg       0.88      0.88      0.88        91
+weighted avg       0.88      0.88      0.88        91
+```
+
 ### Future Work 
 
-This project can be extended by exploring more advanced models like Random Forest to improve its accuracy
+This project can be extended by exploring more advanced models to improve its accuracy. Regarding Random Forest, I could achieve Max accuracy upto 0.802, which is actually lower than that of Logistic Regression (0.86); perhaps more work need to be done to search for better data and preprocessing.
 
 
 ### Contributing 
